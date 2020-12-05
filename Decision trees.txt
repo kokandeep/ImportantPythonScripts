@@ -1,0 +1,4 @@
+Definition - Entropy, as it relates to machine learning, is a measure of the randomness in the information being processed
+
+the column providing max info gain
+info gain = entropy(S)

@@ -1,0 +1,36 @@
+a = pd.read_csv('demo.csv')    -   this will read the data from demo 
+
+a.groupby[('class'])[['Name']].count()
+
+a['class'].value_counts()    -   to apply on single column
+
+a['state'].unique()    -    this will give unique items
+a['state'].nunique()    -    this will give numbers of unique's number
+
+a.query(' Name=="Nvi" ')
+a.query(' Math_marks > 85 ')
+
+a[a['Name'] == 'Nvi']
+a[a['Math_marks'] > 85]
+
+to delete duplicate data   -->  
+df.drop_duplicates()   -  this will check whole rows to be same
+df.drop_duplicates(subset=['Name','Class'])   -   this will check only two columns name and class
+
+delete the null records  --  df.dropna()
+fill the null values  --  df.fillna('hello'),   df['math_marks'].fillna(50)
+
+to change object to int or string -  df['id'].apply(int)
+
+df['creationdate'] = pd.to_datetime(df['creationdate']) - to change format of date and time.
+
+
+
+df.shape  -  gives us rows and columns
+merged file can be turned into csv file by pc.to_csv('merged files')
+df.isnull().sum()   -   to check null values
+
+df.head()   -    gives us 1st 5 records  -  dame with tail gives us last 5 records
+
+to rename a column
+user.rename(columns = {'country':'user_country'}, inplace = True)

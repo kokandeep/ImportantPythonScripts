@@ -1,0 +1,18 @@
+for encoding    -     pd.read_csv('')encoding='ISO-8859-1'
+
+df.describe()   -   gives us max,min,mean
+df.columns    =   list of columns
+ign.isnull().sum()   =  gives us number of null values
+
+indexing and slicing  --->
+series = df['column name']
+scalervalue = series[1:6]   - indexing
+col=ign[['scorjfn']]   -   this will give dataframe
+
+iloc - index location[rows,columns]   -   
+
+df.iloc[:,1] - - - this will give all rows and 1st index column
+df[df.iloc[:,1]=='Amazing']  
+ign.iloc[:,[2,5,4]]   -    all rows and 2,5,4 columns
+ign.loc[:,['title','genre']]  -   this will give specific columns
+ign.loc[:,'genre']=='sports'   -   true will be given on sports

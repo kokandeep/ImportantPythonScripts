@@ -1,0 +1,19 @@
+2. Methodology
+
+In this project the prediction of stock market is done by the Support Vector Machine (SVM) and Radial Basis Function (RBF).
+
+2.1 Support Vector Machine 
+A  Support  Vector  Machine  (SVM)  is  a  discriminative classifier that formally defined by the separating hyperplane. In other words, the given labeled training data (supervised learning),  the  algorithm  outputs  the  optimal  hyperplane which categorizes  new examples.  In the two-dimensional space this hyperplane is a line dividing a plane into two parts where in each class lay in either side.
+Support Vector Machine  (SVM)  is considered to be  as one of the most suitable  algorithms  available for the  time series prediction.The supervised algorithm can be used in both,  regression  and  classification.  The  SVM  involves  in plotting of data as point in the space of n dimensions.
+ 
+
+
+2.2 Radial Basis Function (RBF)
+In the machine learning, the radial basis function kernel, or  RBF  kernel,  is  a  popular  kernel  function  used  in  the various kernelized  learning algorithms.  In  particular, it is most  commonly  used  in  support  vector  machine classification.
+A radial basis function is the real-valued function whose value depends only on the distance from the origin, so that; or alternatively on the distance from some other point, called a center, so that. Any function which satisfies the property is a radial function.
+                            RBF = Local Response Function
+The RBF Kernel  is  nothing more  than a low-band  pass filter, which is well known in Signal Processing as a tool to smooth images. RBF Kernel acts as the prior that selects out smooth solutions.
+The Radial basis function kernel, is also called as the RBF kernel, or Gaussian kernel, is a kernel that is in the form of a radial basis function (more specifically, a Gaussian function). The RBF kernel is defined as
+                      KRBF (x, x’) = exp [-y ||x -x’||2] 
+Where y is the parameter that sets “spread” of the kernel
+The RBF units provide a new basis set for synthesizing the output  function.  The  radial  basis  functions  are  not orthogonal and are overcomplete.

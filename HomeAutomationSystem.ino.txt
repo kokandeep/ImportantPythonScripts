@@ -1,0 +1,47 @@
+#include <SoftwareSerial.h>
+const int rxPin = 4;    // defining pin4 as a rx(receiver) pin
+const int txPin = 2;    // defining pin2 as a tx(transmitter) pin           
+SoftwareSerial mySerial(rxPin  , txPin);
+const int Loads[] = {9, 10};
+int state = 0;
+int flag = 0;
+void setup() 
+{
+   for (int i=0;i<2;i++)
+    {
+      pinMode(Loads[i], OUTPUT);  
+    }
+   mySerial.begin(38400);
+   for (int i=0;i<2;i++)
+    {
+      digitalWrite(Loads[i], LOW);
+    }
+}
+void loop() 
+{  
+    if(mySerial.available() > 0)
+    {
+      state = mySerial.read();  // Reading Input From "Bluetooth Controller" app
+      flag=0;
+    }
+    
+    switch(state)
+    {
+      case '0':digitalWrite(Loads[0], HIGH);  // turn ON light1 
+               flag=1;
+               break;
+      case '1':digitalWrite(Loads[0], LOW);  // turn OFF light1
+               flag=1;
+               break;
+      case '2':digitalWrite(Loads[1], HIGH);  // turn ON light2
+               flag=1;
+               break;
+      case '3':digitalWrite(Loads[1], LOW);  // turn OFF light2
+               flag=1;
+               break;
+         case '4':digitalWrite(Loads[0], LOW);  // turn OFF light1
+               digitalWrite(Loads[1], LOW);  // turn OFF light      
+               flag=1;
+               break;
+     }
+}

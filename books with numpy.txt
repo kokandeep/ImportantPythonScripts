@@ -1,0 +1,17 @@
+# Books with numpy
+dff = np.array()
+x = dff[:,5].astype(str)
+val,count = np.unique(
+
+dict = list(zip[])
+
+
+ques 2 
+
+
+
+
+
+ques 3 
+recor 2002 = dff[dff[:,5] =='2002']
+rating = record 2002

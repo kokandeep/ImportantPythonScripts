@@ -1,0 +1,14 @@
+2d dataset
+
+import pandas as pd 
+syntax
+df = pd.DataFrame(data,index,columns[]dtype=)
+
+data = [['a','b','c',],[1,2,3],['d','e','y']]
+dd = pd.DataFrame(data,index,columns=['c1','c2','c3,],dtype)
+
+
+# with dictionary
+data = {'c1':[1,2,3],'c2':[}
+
+data = {'c1':pd.Series(

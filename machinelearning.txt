@@ -1,0 +1,44 @@
+Machine Learning
+algorithms = 
+
+For supervised ml ==
+1. classification - Logistic re ,KNN,SVM,dtc,rfc,naive bayes(
+2. regression - sales prediction (prediction algorithms)
+
+
+logistic regression - - - 
+1) y = mx+c 
+2) probability must be a +ve we turn to exponential form i.e. e^y = e^(mx+c) 
+3) to make the prob less than 1 divide a p by a number greater than y 
+4) if p is prob of sucsess then q = (p-1) is prob of failure
+equation = log(y/(1-y)) = y
+
+
+
+
+data wrangling  --  will aplyy on series values
+$$ to change string to numbers
+from sklearn.preprocessing import LabelEncoder as lb
+lb = LabelEncoder()
+df['humidity']   = lb.fit_transform(where we are changing )
+
+
+Imputer
+fill the null values of columns having datatypes int float with mean max or in values
+imputer will apply on dataframe 
+
+
+train and test
+test_size will take how many values will be tested 
+
+
+polynomial regression -- 
+
+no predict so we need to put linear regression after
+
+
+
+
+
+
+

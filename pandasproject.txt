@@ -1,0 +1,22 @@
+df.info()   -   gives info 
+df.isnull().sum()   -   gives count of null values
+
+
+A  ques
+
+to drop some columns like unnamed column use   -  df.drop(['unnamed: 0'])
+df = df[['reputation']].head(1)
+B ques
+ to change date to standard form   =   df['creationdate']=pd.to_datetime()
+
+C ques
+
+df = df.sort_values(ascending=False)   =   sort descending
+
+convert viewcount into numeric datatype   -  df['viewcount'] = pd.to_numeric(columns,errors='coerce')
+
+H ques 
+df.groupby(['loc'])[['userid']].count()
+df['loc'].replace(['locations which we want to change'])
+or
+df[df['loc'].str.contains('India')  ==  True]   -  this will give all location which has word India in it

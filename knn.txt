@@ -1,0 +1,4 @@
+K-Nearest Neighbours - Classification
+where we apply logistic we can apply knn too.
+
+if training data is large i.e. in lakhs rhen k value will be large
