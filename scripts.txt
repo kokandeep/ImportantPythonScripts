@@ -1,0 +1,41 @@
+## For Labelling :
+
+conda install pyqt=5
+conda install -c anaconda lxml
+cd C:\Users\singhkokandeep\Desktop\labelImg-master
+pyrcc5 -o libs/resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+
+
+## to add an enviorment:
+conda create --name myenv
+or
+conda create -n tensorflow pip python=3.9
+
+## to remove an enviorment:
+conda remove -n yourenvname -all
+
+## for this error
+File "/Users/MRJ/anaconda3/envs/python37-tf2.1/lib/python3.7/
+site-packages/object_detection/utils/label_map_util.py",
+line 137, in load_labelmap
+
+with tf.gfile.GFile(path, 'r') as fid:
+  AttributeError: module 'tensorflow' has no attribute 'gfile' 
+  goto and in
+1.Find label_map_util.py line 137.
+2.Replace tf.gfile.GFile to tf.io.gfile.GFile
+file directory: C:\Users\singhkokandeep\Anaconda3\Lib\site-packages\object_detection\utils
+
+## create virtual enviorment and make with ipykernel
+python -m venv tfod
+.\tfod\Scripts\activate # Windows 
+python -m pip install --upgrade pip
+pip install ipykernel
+python -m ipykernel install --user --name=tfod
+
+
+
+
+
