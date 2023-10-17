@@ -35,7 +35,24 @@ python -m pip install --upgrade pip
 pip install ipykernel
 python -m ipykernel install --user --name=tfod
 
+# Creaing Bounding boxes around text
+if read_result.status == OperationStatusCodes.succeeded:
+    for text_result in read_result.analyze_result.read_results:
+        for line in text_result.lines:
+            x1, y1, x2, y2, x3, y3, x4, y4 = line.bounding_box
+            draw =ImageDraw.Draw(image)
+            draw.line(
+            ((x1,y1), (x2,y1), (x2,y2), (x3,y2), (x3,y3), (x4,y3), (x4,y4), (x1,y4), (x1,y1)),
+            fill=(0,0,0),
+            width=1
+            )
+print("After the Implementation of Azure Vision OCR :")
+display(image)
 
+# Pillow with url images
+response = requests.get(read_image_url)
+image = Image.open(BytesIO(response.content))
+display(image)
 
 
 
