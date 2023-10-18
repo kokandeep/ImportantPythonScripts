@@ -54,5 +54,8 @@ response = requests.get(read_image_url)
 image = Image.open(BytesIO(response.content))
 display(image)
 
+# To bypass in terminals
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 
 
