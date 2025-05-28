@@ -1,0 +1,204 @@
+## create virtual enviorment and make with ipykernel
+python -m venv dynamic
+.\dcp_env\Scripts\activate26533
+python -m pip install --upgrade pip
+pip install ipykernel
+python -m ipykernel install --user --name=HrPolicy
+pip install notebook
+
+##  Create an enviorment
+conda create -n sdg python=3.11.*
+conda create -n hrms_aryan python=3.10.9
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+## Remove the enviorment
+conda env remove --name intra2
+pip cache purge
+free -h
+sudo journalctl -u hrchatbot-live.service -f
+
+User:- Kokandeep_Singh
+Password:- Tmotions@AI9892
+ip:- 3.225.215.151
+
+nohup python3 api.py &
+
+sudo journalctl -u hrchatbot-live.service -f
+
+unpaid api key gemini
+AIzaSyBgnLM_yajudwUCq09M83wi6IKIjEYg29s
+
+Paid API key gemini from sajan
+AIzaSyBjNNFK9dPr9sy-GCfuCTMXGYkTnmPqB4U
+
+nohup python api.py &
+
+## Start or stop services for any chatbot
+bash /home/ec2-user/Deployment_Final/script/manage_services.sh
+
+## Get size of data in linux
+sudo du -h --max-depth=1 /home/Kokandeep_Singh 2>/dev/null | sort -rh
+sudo du -h --max-depth=1 /home/AI4 2>/dev/null | sort -rh
+
+## To delete folder
+sudo rm -rf /AI_framwork_kokan
+
+cd AI_framework
+source  /home/AI4/anaconda3/bin/activate textmatch
+conda activate textmatch1
+
+## Tmotions MongoDB
+mongodb://AI:VZASXtYJEEM7gcwYwPVfz@52.202.55.11:27017/
+
+watch -n 1 nvidia-smi
+sudo netstat -tuln | grep 9222
+
+## To find the app running on a port number ##
+sudo lsof -i :5030
+Password - Tmotions@AI9892
+
+## To kill an app on server linux ##
+sudo kill -9 12503
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+-----------
+Run Jupyter notebook on server
+python3 -m notebook --ip 0.0.0.0 --port 5016
+ip:- 3.225.215.151
+-----------
+
+conda info --envs
+
+## Json loader
+loader = JSONLoader(file_path=file_name, jq_schema=".[]", text_content=False)
+documents = loader.load()
+
+mongodb+srv://kokan:<MongoDB123>@cluster1.r2dknyo.mongodb.net/?retryWrites=true&w=majority
+
+AIzaSyBgnLM_yajudwUCq09M83wi6IKIjEYg29s
+
+farmersweeklyapi.tglserver.net
+
+# MongoDB connection details
+host = '52.202.55.11'
+port = 27017
+username = 'AI'
+password = 'VZASXtYJEEM7gcwYwPVfz'
+
+%load_ext autotime
+
+## Create requirements.txt file
+pip3 freeze > requirements.txt
+pip3 chill > requirements.txt
+
+## install reqirements.txt file
+pip install -r requirements.txt
+
+AHDB Front end chatbot
+https://aiui-framework.test.tglserver.net/chatbot/FarmerWeekly/
+
+pip install -U pip
+pip install torch==2.0.1
+pip install transformers==4.31.0
+pip install langchain==0.0.266
+pip install chromadb==0.4.5
+pip install xformers==0.0.20
+pip install sentence_transformers==2.2.2
+pip install InstructorEmbedding==1.0.1
+
+Create new enviorment for linux:
+1.	python -m venv newenv - (This is the name of enviorment we are using)
+2.	going to the new enviorment folder – cd newenv
+3.	Activate enviorment - source bin/activate
+4.	Required library - pip install ipykernel
+5.	Loading the enviorment in jupyter notebook - python -m ipykernel install --user --name=newenv
+6.	Install jupyter notebook – pip install notebook
+7.	Running notebook in CMD in linux - python3 -m notebook --ip 0.0.0.0 --port 7000
+
+from langchain_community.llms import VLLMOpenAI
+llm = VLLMOpenAI(
+    openai_api_key="EMPTY",
+    openai_api_base="http://3.225.215.151:8000/v1",
+    model_name="TheBloke/Llama-2-7B-Chat-GPTQ",
+    # model_kwargs={"temperature": 0.1},
+    max_tokens=512,
+    temperature= 0.1
+)
+
+from langchain_community.llms import VLLMOpenAI
+llm = VLLMOpenAI(
+    openai_api_key="EMPTY",
+    openai_api_base="https://haymarketllamaapi.tmotionsdev.tglserver.net/v1",
+    model_name="TheBloke/Llama-2-13B-Chat-GPTQ",
+    # model_kwargs={"temperature": 0.1},
+    max_tokens=512,
+    temperature= 0.3
+)
+
+https://ai-framework.test.tglserver.net/
+Email: Admin@gmail.com
+Password: Admin@000
+
+Teams 
+Value : -mQ8Q~8wHUVrDez1tzT3AX~2dli6VDeau.bdZaTp    - CLIENT_ID
+Secret ID : 6df657a8-46c3-4167-bfa5-749a5135f921    - CLIENT_SECRET
+
+pythonapp
+Value : -mQ8Q~8wHUVrDez1tzT3AX~2dli6VDeau.bdZaTp
+Secret ID : 6df657a8-46c3-4167-bfa5-749a5135f921
+Application (client) ID : 4df0a87d-b02c-4db0-8498-9823938313c5
+Object ID   : aa88ffb8-ad3e-4afd-99cc-58f6602291da
+Directory (tenant) ID  : e8679cd0-0462-4591-bfc5-a55bb33d5560
+
+client_id = "4df0a87d-b02c-4db0-8498-9823938313c5"  app_id
+client_secret = 'jHC8Q~3awk96QTye3cPXhFnNVJsuXqlLBbEeXbq6'
+tenant_id = "e8679cd0-0462-4591-bfc5-a55bb33d5560"
+authority = f"https://login.microsoftonline.com/{tenant_id}"
+scope = ["https://graph.microsoft.com/.default"]
+
+## HR tmotions chatbot
+Host: 3.225.215.151
+User: AI4
+conda activate textmatch
+cd WC
+python3 api.py
+
+## Import llama3.1 from different machine
+from langchain_ollama.llms import OllamaLLM
+
+model_url = "http://localhost:11434"
+llm = OllamaLLM(model="llama3.1", base_url=model_url)
+
+# DCP Summary and qa front end 
+https://aiui-framework.test.tglserver.net/chatbot/dcp/
+
+# DCP QA Payal mam points
+https://aiui-framework.test.tglserver.net/chatbot/dcp/qa/
+
+Dynamic Pricing
+https://aiui-framework.test.tglserver.net/chatbot/DynamicPrice/
+
+## Hugging face token - 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
+
+## aai.settings.api_key = "df2f94b1195d4ca78a0fc39cfc1922fd"
+
+## Google gemini api key
+AIzaSyBTTreC-PiZHyN9hc5TXYG0lqrgIyiiy38
+
+## Hortweek frontend
+https://aiui-framework.test.tglserver.net/chatbot/hortweek/
+
+## Internal docs chatbot
+https://aiui-framework.test.tglserver.net/chatbot/HrPolicy/
+
+pcsk_axnNe_LGrQaAxdY2t4qcZbdWYKnj4bFD6rHaC8cgcsEpYfhJ4WbijLFBFPiErmEjpGir5
+
+Scrapedo - 9f0e5db0b6c642ae93f35cb5e2bfe267d7f6a05bb61
+
+## Intranet Phase 2
+http://aiui-framework.test.tglserver.net/chatbot/HrPolicy/v2/
+
+
+
+
